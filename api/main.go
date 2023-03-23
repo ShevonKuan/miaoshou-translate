@@ -37,7 +37,7 @@ var (
 	}
 )
 
-func api(w http.ResponseWriter, r *http.Request) {
+func Api(w http.ResponseWriter, r *http.Request) {
 	posi := make(map[string]string) // position map[position]originText
 	r.ParseForm()
 	resp := `{
