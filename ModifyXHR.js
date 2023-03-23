@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         Modify XHR Request URL
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
+// @version      1.0
+// @description  nil
 // @author       ShevonKwan
 // @match        https://erp.91miaoshou.com/common_collect_box/items
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=91miaoshou.com
 // @grant        GM_xmlhttpRequest
+// @license      GPLv3
 // ==/UserScript==
+
 
 
 (function () {
