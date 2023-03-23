@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Modify XHR Request URL
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.5
 // @description  nil
 // @author       ShevonKwan
 // @match        https://erp.91miaoshou.com/common_collect_box/items
