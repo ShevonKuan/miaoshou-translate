@@ -7,6 +7,7 @@
 // @match        https://erp.91miaoshou.com/common_collect_box/items
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=91miaoshou.com
 // @grant        GM_xmlhttpRequest
+// @license GPlv3
 // ==/UserScript==
 
 (function () {
