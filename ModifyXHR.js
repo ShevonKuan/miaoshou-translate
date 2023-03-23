@@ -2,7 +2,7 @@
 // @name         Modify XHR Request URL
 // @namespace    http://tampermonkey.net/
 // @version      1.5
-// @description  nil
+// @description  妙手翻译劫持脚本，将翻译api请求导向自定义服务器
 // @author       ShevonKwan
 // @match        https://erp.91miaoshou.com/common_collect_box/items
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=91miaoshou.com
