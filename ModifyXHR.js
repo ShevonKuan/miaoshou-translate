@@ -13,7 +13,6 @@
 
 
 (function () {
-    "use strict";
     var open = XMLHttpRequest.prototype.open;
     XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
         if (url === "https://erp.91miaoshou.com/api/move/common_collect_box/translateCommonBoxDetail") {
