@@ -1,29 +1,26 @@
 package api
 
 import (
-	"fmt"
 	"net/http"
 	"sync"
 
-	"github.com/ShevonKuan/translate-server/module"
+	"github.com/longbridgeapp/opencc"
 	"github.com/tidwall/gjson"
 	"github.com/tidwall/sjson"
 )
 
 func translate(i string) string {
 	// 调用翻译函数
-	input := &module.InputObj{
-		SourceText: i,
-		SourceLang: "zh",
-		TargetLang: "zh-TW",
-	}
-	output, _, err := module.Engine["google"](input)
-	// 返回翻译结果
+	s2twp, err := opencc.New("s2twp")
 	if err != nil {
-		fmt.Println(err)
 		return ""
 	}
-	return output.TransText
+	out, err := s2twp.Convert(i)
+	if err != nil {
+		return ""
+	}
+	return out
+
 }
 
 func modify(i *string, position string, content string) {
